@@ -1,0 +1,90 @@
+baseURL = "https://blog.listder.xyz/"    # 博客网址
+languageCode = "zh-CN"              # 网站语言。国际化需要
+title = "Hentai Listder"                  # 博客的名字。浏览器 title 上也会显示
+hasCJKLanguage = true               # 统计汉字
+theme = "nicesima"                  # 主题
+
+paginate = 11                       # 每页的文章数
+enableEmoji = true                  # 支持 Emoji
+enableRobotsTXT = true              # 支持 robots.txt
+googleAnalytics = ""                # Google 统计 id
+
+# Chroma 代码高亮 http://gohugo.io/content-management/syntax-highlighting/
+pygmentsUseClasses = true # 使用自定义的代码高亮样式
+[markup]
+  [markup.highlight]
+    codeFences = true
+    anchorLineNos = false
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+
+[Permalinks]
+ posts = "/:year/:month/:day/:filename"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+
+ [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Friends"
+    url = "/friends/"
+    weight = 5
+
+[params]
+  since = "2024"                  # 站点建立时间。也是版权的开始年份
+  author = "listder"              # 作者名字
+  avatar = "/pic/listder.jpg"                     # 头像
+  subtitle = ""
+  description = ""
+  license = ''
+  plantuml = true
+  math = true
+  enableGitalk = false            # [主题依赖]gitalk 评论系统全局开关
+  enableUtteranc = true           # [主题依赖]Utteranc 评论系统全局开关
+  showPostSocialLinks = true      # [主题依赖]开启每一篇文章的 social-links 显示 (与主页显示与否无关)
+  easySearchedEngine = "google"   # [主题依赖]Easy-Searched-Text 默认使用的搜索引擎
+  toc = true                      # [主题依赖]是否开启目录
+  autoCollapseToc = false         # [主题依赖]Auto expand and collapse toc
+  mathjax = true                  # [主题依赖]是否使用mathjax（数学公式）
+
+  [params.utteranc] # Homepage: https://utteranc.es
+    repo = "bGlzdGRlcg/utteranc" # The repo to store comments
+    issueTerm = "title" # the mapping between blog posts and GitHub issues. 
+    theme = "preferred-color-scheme" # Theme
+    crossorigin = "anonymous" # default: anonymous
+
+  [params.social] # [主题依赖]
+    #Bilibili = "1694962974"
+    Github = "bGlzdGRlcg"
+    #Twitter = "bGlzdGRlcg"
+    Email = "listder@listder.xyz"
+    Telegram = "listder"
+
+
+  [params.custom]
+    css = ["css/main.css"]
+    js = ["js/canvas-nest.js"]

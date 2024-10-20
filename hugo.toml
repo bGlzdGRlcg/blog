@@ -86,5 +86,4 @@ pygmentsUseClasses = true # 使用自定义的代码高亮样式
 
 
   [params.custom]
-    css = ["css/main.css"]
     js = ["js/canvas-nest.js"]

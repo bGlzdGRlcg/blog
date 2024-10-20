@@ -32,7 +32,7 @@
     {{ if (and .IsPage (.Site.Params.contentProgress | default true)) }}
         <progress class="content_progress" max="0" value="0"></progress>
     {{ end }}
-     <div class="container">
+    <div class="container">
         <div class="navbar">
             <div class="navbar-header header-logo">
                     <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
@@ -44,8 +44,8 @@
                 </div>
             </div>
         </div>
-     
-          <div class="menu" id="mobile-menu">
+    
+        <div class="menu" id="mobile-menu">
                 <nav class="mb-md">
                     {{ $currentPage := . }}
                     {{ range .Site.Menus.main }}
